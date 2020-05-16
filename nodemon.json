@@ -1,0 +1,6 @@
+{
+  "env": {
+    "MONGO_DB": "mongodb://localhost:27017/sell_books",
+    "JWT_KEY": "dummy_key"
+  }
+}
