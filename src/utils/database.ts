@@ -3,13 +3,13 @@ const fakeDatabase = [
     id: "a",
     name: "alice",
     soldAt: new Date(),
-    categories: ["asd", "sfs"],
+    categories: ["asassd", "sfs"],
   },
   {
     id: "b",
     name: "bob",
     soldAt: new Date(),
-    categories: ["asd", "sfs"],
+    categories: ["assasd", "sfs"],
   },
 ];
 

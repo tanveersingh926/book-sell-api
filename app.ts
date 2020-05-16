@@ -28,7 +28,7 @@ const schema = new GraphQLSchema({ query: queryType, mutation: mutationType });
 //   category.findOne().then((cate) => {
 //     const newBook = new book({
 //       _id: mongoose.Types.ObjectId(),
-//       title: "Love Life",
+//       title: "The Great Gatsby",
 //       image: "dsfsdf",
 //       author: "Tanveer Singh",
 //       description: "This book is about the love life a loser person.",

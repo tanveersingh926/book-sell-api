@@ -1,7 +1,9 @@
 import { GraphQLObjectType, GraphQLList, GraphQLString } from "graphql";
 import userResolver from "./schema/user/user_resolver";
 import userType from "./schema/user/user_type";
+import booksQuery from "./schema/book/bookQuery";
 import fakeDatabase from "../utils/database";
+import bookMutation from "./schema/book/bookMutation";
 
 const categoriesType = {
   type: new GraphQLList(GraphQLString),
@@ -14,6 +16,7 @@ const queryType = new GraphQLObjectType({
   fields: {
     user: userResolver,
     categories: categoriesType,
+    books: booksQuery,
   },
 });
 
@@ -21,6 +24,7 @@ const queryType = new GraphQLObjectType({
 export const mutationType = new GraphQLObjectType({
   name: "RootMutation",
   fields: {
+    addBook: bookMutation,
     setCategory: {
       type: userType,
       args: {
